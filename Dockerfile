@@ -7,7 +7,7 @@
 # ========================================================================================
 #
 # @author Jay Wheeler.
-# @version 3.8.1
+# @version 3.8.0
 # @copyright © 2018. EarthWalk Software.
 # @license Licensed under the GNU General Public License, GPL-3.0-or-later.
 # @package alpine-nginx-client
@@ -47,7 +47,7 @@ ENV LMS_BASE="/usr/local"
 # =========================================================================
 
 ENV LMSBUILD_VERSION="3.8.0"
-ENV LMSBUILD_NAME="alpine-nginx-client" 
+ENV LMSBUILD_NAME="alpine-nginx" 
 ENV LMSBUILD_REPO=ewsdocker
 ENV LMSBUILD_REGISTRY=""
 
