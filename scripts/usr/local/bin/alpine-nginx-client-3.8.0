@@ -41,7 +41,7 @@ docker run -it \
            -v /etc/localtime:/etc/localtime:ro \
            -v ${HOME}/source:/source \
            -v ${HOME}/workspace:/workspace \
-           --mount source=nginx-html,target=/usr/share/nginx/html \
+           --mount source=nginx-html,target=/nginx-html \
            --name=alpine-nginx-client-3.8.0 \
        ewsdocker/alpine-nginx-client:3.8.0  
 
