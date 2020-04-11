@@ -1,4 +1,4 @@
-### ewsdocker/alpine-nginx-client:3.8.1
+### ewsdocker/alpine-nginx-client:3.10.0
 
 **ewsdocker/alpine-nginx-client** is a simple **Alpine Linux**-based **Docker** image designed as a console interface to maintain the data and configuration files used by **ewsdocker/alpine-nginx**. 
 
@@ -14,16 +14,16 @@ The following scripts will download the selected **ewsdocker/alpine-nginx-client
 
 The <i>default</i> values will install all directories and contents in the <b>docker host</b> user's home directory.  
 
-**ewsdocker/alpine-nginx-client:3.8.1**
+**ewsdocker/alpine-nginx-client:3.10.0**
   
     docker run --rm \
                -v ${HOME}/bin:/userbin \
                -v ${HOME}/.local:/usrlocal \
                -e LMS_BASE="${HOME}/.local" \
                -v ${HOME}/.config/docker:/conf \
-               -v ${HOME}/.config/docker/alpine-nginx-client-3.8.1:/root \
-               --name=alpine-nginx-client-3.8.1 \
-           ewsdocker/alpine-nginx-client:3.8.1 lms-setup-alpine  
+               -v ${HOME}/.config/docker/alpine-nginx-client-3.10.0:/root \
+               --name=alpine-nginx-client-3.10.0 \
+           ewsdocker/alpine-nginx-client:3.10.0 lms-setup-alpine  
 
 ____  
 
@@ -50,9 +50,9 @@ Execute the following _docker run_ command to create a client container and star
                -v ${HOME}/.local/shared/nginx-html:/usr/share/nginx/html \
                -v /etc/localtime:/etc/localtime:ro \
                -v ${HOME}/source:/source \
-               -v ${HOME}/.config/docker/alpine-nginx-client-3.8.1/workspace:/workspace \
-               --name=alpine-nginx-3.8.1 \
-           ewsdocker/alpine-nginx:3.8.1  
+               -v ${HOME}/.config/docker/alpine-nginx-client-3.10.0/workspace:/workspace \
+               --name=alpine-nginx-3.10.0 \
+           ewsdocker/alpine-nginx:3.10.0  
 ____  
   
 **Docker Mount.**
@@ -67,13 +67,13 @@ Execute the following _docker run_ command to create and start a client containe
                -v /etc/localtime:/etc/localtime:ro \
                -v ${HOME}/source:/source \
                -v ${HOME}/workspace:/workspace \
-               --name=alpine-nginx-3.8.1 \
-           ewsdocker/alpine-nginx:3.8.1  
+               --name=alpine-nginx-3.10.0 \
+           ewsdocker/alpine-nginx:3.10.0  
 ____  
   
 To create and run the container, the following should work from the command-line:
 
-    ~/.local/bin/alpine-nginx-3.8.1  
+    ~/.local/bin/alpine-nginx-3.10.0  
 
 ____  
 
@@ -81,7 +81,7 @@ ____
 
 ____  
 
-**Copyright © 2018. EarthWalk Software.**  
+**Copyright © 2018, 2020. EarthWalk Software.**  
 **Licensed under the GNU General Public License, GPL-3.0-or-later.**  
 
 This file is part of **ewsdocker/alpine-nginx-client**.  
